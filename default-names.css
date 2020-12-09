@@ -1,0 +1,10 @@
+:root{
+    --web-green: #00DC64;
+    --web-black: #2F2F2F;
+    --web-light-gray: #E5E5E5;
+    --header-color: white;
+    --letter-color: black;
+    --web-lighter-gray: rgba(0,0,0,0.2);
+    --web-not-so-light-gray:#A6A6A6;
+    --web-too-gray: #F5F5F5;
+}

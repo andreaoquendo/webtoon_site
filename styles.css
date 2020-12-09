@@ -1,0 +1,181 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--web-light-gray);
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+}
+
+#all{
+    min-width:1400px;
+    height:100%;
+}
+
+#big-header {
+    height: 100px;
+    background-color:var(--header-color);
+    overflow: auto;
+}
+
+a{
+    text-decoration: none;
+    color: var(--web-black);
+}
+
+#header{
+    width:inherit;
+    max-width:1640px;
+    width:1400px;
+    height:100px;
+    margin: 0 auto 0 auto;
+    position: relative;
+}
+
+/* top header left */
+
+#webtoon-logo{
+    width:95px;
+    height:95px;
+    margin-top:2.5px;
+    margin-left: 15px;
+    float: left;
+}
+
+ul#navi-links{
+    height:100px;
+    width: auto;
+    float:left;
+    padding-top: 40px;
+}
+
+ul#navi-links li{
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin:auto 0 auto 30px;
+}
+
+/* top header right */
+.login-bar{
+    position:absolute;
+    top:32px;
+    right:20px;
+    width: auto;
+}
+#creators, .vertical-lign, .navi-buttons, #search-bar{
+    display: inline-block;
+}
+
+#creators span{
+    font-weight: 700;
+    margin-top: 0.2px;
+}
+
+#creators img{
+    width:18px;
+    height:18px;
+    float:left;
+    margin-right: 5px;
+    padding-top:0;
+}
+
+#creators a:hover{
+    color: var(--web-green);
+}
+
+#creators a:hover img{
+    filter: invert(68%) sepia(35%) saturate(2559%) hue-rotate(95deg) brightness(93%) contrast(103%);
+}
+
+.vertical-lign{ /* ARRUMAR*/
+    color: var(--web-lighter-gray);
+    margin:0px 10px 0 10px;
+}
+
+/*buttons on header*/
+.button-top{
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 18px;
+    padding:8px 30px;
+    margin-right:5px;
+    line-height: 35px;
+}
+
+#publish{
+    color: var(--header-color);
+    background-color: var(--web-black);
+}
+
+#publish:hover{
+    background-color: black;
+}
+
+#log-in{
+    color: var(--web-not-so-light-gray);
+    border:1px solid var(--web-not-so-light-gray);
+    margin-right: 0;
+    padding-top:7px;
+    padding-bottom:7px;
+}
+/*END buttons on header*/
+#search-bar img{
+    width:13px;
+    height:13px;
+    filter: invert(73%) sepia(3%) saturate(11%) hue-rotate(352deg) brightness(90%) contrast(94%);
+}
+
+#search-bar:hover{
+    background-color: var(--web-too-gray);
+}
+
+#search-bar{
+    text-align:center;
+    margin-top:-10px;
+    width:33px;
+    height:33px;
+    border: 1px solid var(--web-not-so-light-gray);
+    border-radius: 50%;
+    padding-top:6px;
+    color: var(--web-not-so-light-gray);
+}
+
+#search-bar-open{
+    position: absolute;
+    border:1px solid var(--web-not-so-light-gray);
+    background-color: var(--header-color);
+    border-radius: 30px;
+    z-index: 1000;
+    font-size: 12px;
+    right:0;
+    top:0;
+    height:35px;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top:6px;
+}
+
+#search-bar-open input{
+    border:none;
+    font-family: 'Nunito', sans-serif;
+}
+
+.ico_search, .ico_clear{
+    width:13px;
+    height:13px;
+    background-size:13px 13px;
+    background-repeat: no-repeat;
+    filter: invert(73%) sepia(3%) saturate(11%) hue-rotate(352deg) brightness(90%) contrast(94%);
+    color:transparent;
+}
+
+.ico_search{
+    background-image: url("magnifying-glass.svg");
+}
+
+.ico_clear{
+    background-image:url("cross.svg");
+}
