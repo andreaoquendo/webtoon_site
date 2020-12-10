@@ -245,7 +245,6 @@ ul#navi-links li a:hover{
     height:inherit;
     margin-left:auto;
     margin-right: auto;
-    background-color: blueviolet;
     position:relative;
 }
 
@@ -253,15 +252,15 @@ ul#navi-links li a:hover{
     float:left;
     width:806px;
     height: inherit;
-    background-color: yellow;
     position: relative;
 }
 
-.big-poster img.banner_pic{
+.big-poster .banner-pic{
     position: absolute;
     right:-38px;
     z-index:1;
 }
+
 
 .link-box{
     position: absolute;
@@ -280,27 +279,22 @@ ul#navi-links li a:hover{
     position: absolute;
     bottom:64px;
     left:26px;
-    z-index:20;
+    z-index:110;
 }
 
 #pagination a{
     height:12px;
     width:12px;
-    display: block;
+    display: inline-block;
     background-image: url(images/banner/circle.svg);
     background-size: 12px;
     filter: invert(75%) sepia(5%) saturate(8%) hue-rotate(319deg) brightness(87%) contrast(95%);
-
+    margin-right: 12px;;
 }
 
-#pagination  img.ico_cicle{
-    filter: invert(75%) sepia(5%) saturate(8%) hue-rotate(319deg) brightness(87%) contrast(95%);
-    width:12px;
-    height:12px;
-    float:left;
-    margin-right:12px;
+#pagination a.open{
+    filter: invert(100%) sepia(99%) saturate(0%) hue-rotate(307deg) brightness(102%) contrast(103%);
 }
-
 
 .poster-container{
     float:right;
