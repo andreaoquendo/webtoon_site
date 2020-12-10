@@ -33,28 +33,41 @@
                 </a>
                 </span>
                 <span class='vertical-lign'>|</span>
+            <!-- buttons publish and log in -->
             <div class="navi-buttons">
                 <a href="" class="button-top" id="publish">Publish</a>
                 <a href="" class="button-top" id="log-in">Log In</a>
             </div>
             <span class="vertical-lign">|</span>
+            <!-- search bar -->
             <span id="search-bar">
                 <img src="magnifying-glass.svg" alt="magnifying-glass" />
             </span>
             <div id="search-bar-open" style="display: none" placeholder="bblalalla">
                 <span class="input-box">
-                    <input id="input-search" type="text" size="30" placeholder="Search by Series, Title or Creator"/>
+                    <input id="input-search" type="search" size="26" placeholder="Search by Series, Title or Creator"/>
                     <em class='ico_search' style="display: inline-block">Search</em>
                     <a class='ico_clear' href='javascript:void(0)' style='display:none'>Clear</a>
                     <span class="vertical-lign">|</span>
                     <span id="close"><a href='javascript:void(0)'>Close</a></span>
                 </span>
-            </div>
+                <div id="open-search-box" style="display:none">
+                  <ul>
+                    <ul id="recentie" class="recent"> 
+                    </ul>
+                    <a id="clear-recent" href=''>Clear Recent Researches</a>
+                  </ul>
+                </div>
+            
             </div>
         </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <div class="content">
+
+    </div>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src='page.js'></script>
+    <script src="webtoon-info.js"></script>
   </body>
 </html>

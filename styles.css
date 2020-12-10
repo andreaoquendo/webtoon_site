@@ -16,7 +16,7 @@ body{
 #big-header {
     height: 100px;
     background-color:var(--header-color);
-    overflow: auto;
+    /*overflow: hidden;*/
 }
 
 a{
@@ -56,6 +56,10 @@ ul#navi-links li{
     font-weight: bold;
     text-transform: uppercase;
     margin:auto 0 auto 30px;
+}
+
+ul#navi-links li a:hover{
+    color: var(--web-green);
 }
 
 /* top header right */
@@ -147,20 +151,23 @@ ul#navi-links li{
     position: absolute;
     border:1px solid var(--web-not-so-light-gray);
     background-color: var(--header-color);
-    border-radius: 30px;
+    border-radius: 17px;
     z-index: 1000;
     font-size: 12px;
     right:0;
     top:0;
-    height:35px;
-    padding-left: 20px;
+    width: 340px;
+    /*padding-left: 20px;*/
     padding-right: 10px;
-    padding-top:6px;
+    padding-top:7px;
+    padding-bottom: 6px;
 }
 
 #search-bar-open input{
     border:none;
     font-family: 'Nunito', sans-serif;
+    margin-right:10px;
+    margin-left:20px;
 }
 
 .ico_search, .ico_clear{
@@ -178,4 +185,47 @@ ul#navi-links li{
 
 .ico_clear{
     background-image:url("cross.svg");
+}
+
+#open-search-box{
+    padding-left:20px;
+    margin-top: 6px;
+    width:339px;
+    z-index: 100000;
+}
+
+#open-search-box #clear-recent{
+    color: var(--web-super-gray);
+    font-weight: 600;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-top:10px;
+    padding-bottom:5px;
+}
+
+#clear-recent{
+    margin-left:-20px;
+    display: block;
+    border-top: 1px solid var(--web-lighter-gray);
+}
+
+#recentie{
+    margin-left:-20px;
+    display: block;
+    border-top: 1px solid var(--web-lighter-gray);
+}
+
+#open-search-box .recent li{
+    padding-left: 20px;
+    padding-top:10px;
+    padding-bottom:10px;
+    font-size:14px;
+}
+
+#open-search-box .recent li a{
+    color: var(--web-super-gray);
+}
+
+#open-search-box .recent li:hover{
+    background-color: var(--web-gray-highlight);
 }
