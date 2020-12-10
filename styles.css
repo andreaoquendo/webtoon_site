@@ -26,8 +26,8 @@ a{
 
 #header{
     width:inherit;
-    max-width:1640px;
-    width:1400px;
+    max-width:1680px;
+    width:inherit;
     height:100px;
     margin: 0 auto 0 auto;
     position: relative;
@@ -209,7 +209,8 @@ ul#navi-links li a:hover{
     border-top: 1px solid var(--web-lighter-gray);
 }
 
-#recentie{
+/*the id recentie is made for JavaScript use*/
+#open-search-box .recent{
     margin-left:-20px;
     display: block;
     border-top: 1px solid var(--web-lighter-gray);
@@ -228,4 +229,101 @@ ul#navi-links li a:hover{
 
 #open-search-box .recent li:hover{
     background-color: var(--web-gray-highlight);
+}
+
+/*-- banner --*/
+.banner{
+    width:100%;
+    height:492px;
+    background-image: url(/images/banner/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-banner{
+    width:1110px;
+    height:inherit;
+    margin-left:auto;
+    margin-right: auto;
+    background-color: blueviolet;
+    position:relative;
+}
+
+.big-poster{
+    float:left;
+    width:806px;
+    height: inherit;
+    background-color: yellow;
+    position: relative;
+}
+
+.big-poster img.banner_pic{
+    position: absolute;
+    right:-38px;
+    z-index:1;
+}
+
+.link-box{
+    position: absolute;
+    height:416px;
+    top:38px;
+    left:0;
+    width:inherit;
+    background-color: transparent;
+    display: block;
+    z-index: 100;
+}
+
+#pagination{
+    height:12px;
+    width: 200px;
+    position: absolute;
+    bottom:64px;
+    left:26px;
+    z-index:20;
+}
+
+#pagination a{
+    height:12px;
+    width:12px;
+    display: block;
+    background-image: url(images/banner/circle.svg);
+    background-size: 12px;
+    filter: invert(75%) sepia(5%) saturate(8%) hue-rotate(319deg) brightness(87%) contrast(95%);
+
+}
+
+#pagination  img.ico_cicle{
+    filter: invert(75%) sepia(5%) saturate(8%) hue-rotate(319deg) brightness(87%) contrast(95%);
+    width:12px;
+    height:12px;
+    float:left;
+    margin-right:12px;
+}
+
+
+.poster-container{
+    float:right;
+    height:416px;
+    margin-top:38px;
+
+}
+
+.poster{
+    width:304px;
+    height: 208px;
+    display: block;
+    position: relative;
+}
+
+#first-poster img{
+    position: absolute;
+    right:0;  
+    top:0;  
+}
+
+#sec-poster img{
+    position: absolute;
+    right:0;  
+    bottom:0; 
 }
