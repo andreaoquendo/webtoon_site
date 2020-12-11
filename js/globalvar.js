@@ -13,3 +13,11 @@ var _recentSearchesBox = document.getElementById("recentie");
 var _researchHistory = " ";
 let _buttonClearResearch = document.getElementById("clear-recent");
 let _openSearchBox = document.getElementById("open-search-box");
+
+if(window.jQuery)
+console.log("loaded");
+else
+console.log("not loaded");
+
+let _todayDate = new Date();
+let _todayDayWeek = _todayDate.getDay();

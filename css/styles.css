@@ -321,3 +321,84 @@ ul#navi-links li a:hover{
     right:0;  
     bottom:0; 
 }
+
+/*----- WEEKLY UPDATES -----*/
+
+/*-- WEEKLY UPDATES: days tab --*/
+.daily{
+    background-color: white;
+    width:100%;
+    height:62px;
+    border-top:1px solid var(--web-border);
+    border-bottom:1px solid var(--web-border);
+}
+.daily-inner{
+    width:1110px;
+    margin: 0 auto;
+    height:inherit;
+    position: relative;
+}
+
+#days-of-week{
+    margin-left: 107px;
+    width:840px;
+}
+
+#days-of-week li{
+    width: 120px;
+    text-align: center;
+    float:left;
+}
+
+#days-of-week a.days{
+    display:block;
+    width: 120px;
+    height:60px;
+    font-weight: 700;
+    color: black;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+#days-of-week a.closed:hover, .daily-inner .closed:hover{
+    color:var(--web-green);
+}
+
+#days-of-week a.open{
+    background-color:var(--web-green);
+    color:white;
+    margin-top:-1px;
+    height:62px;
+}
+
+.daily-inner .also-button {
+    position: absolute;
+    display: inline-block;
+    top:0;
+    right:0;
+}
+.also-button a{
+    display:block;
+    width: 120px;
+    height:60px;
+    font-weight: 600;
+    color:var(--web-not-so-light-gray);
+    padding-top:21px;
+    padding-bottom:20px;
+    font-size: 15px;
+    text-align: center;
+    
+}
+
+#vertical{
+    background-color: var(--web-border);
+    width:1px;
+    height:14px;
+    margin-left: 23px;
+    margin-top:20px;
+    display: inline-block;
+}
+
+.page{
+    height:200px;
+}
