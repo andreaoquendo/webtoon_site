@@ -283,11 +283,11 @@ ul#navi-links li a:hover{
 }
 
 #pagination a{
-    height:12px;
-    width:12px;
+    height:10px;
+    width:10px;
     display: inline-block;
     background-image: url(images/banner/circle.svg);
-    background-size: 12px;
+    background-size: 10px;
     filter: invert(75%) sepia(5%) saturate(8%) hue-rotate(319deg) brightness(87%) contrast(95%);
     margin-right: 12px;;
 }

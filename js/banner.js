@@ -1,1 +1,1 @@
-document.getElementById("banner_pic").setAttribute("src", "images/banner/skye.png");
+//document.getElementById("banner-pic").setAttribute("src", "images/banner/skye.png");
