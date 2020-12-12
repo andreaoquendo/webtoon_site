@@ -400,5 +400,103 @@ ul#navi-links li a:hover{
 }
 
 .page{
-    height:200px;
+    width:1140px;
+    margin:0 auto;
+    padding-top: 18px;
+    padding-left:15px;
+}
+
+.page li{
+    display: inline-block;
+    width:210px;
+    height:210px;
+    margin:0 10.5px 10.5px 0;
+    overflow: hidden;
+}
+
+.page .page-flip{
+    display: block;
+    width:210px;
+    height:210px;
+    background-color: khaki;
+    position:relative;
+}
+
+.page-flip .card-front, .page-flip .card-back{
+    width:210px;
+    height:210px;
+    top:0;
+    left:0;
+    position: absolute;
+    transition: opacity 0.5s;
+}
+
+.card-front .info{
+    margin-top: -196px;
+    margin-left:18px;
+    margin-right:35px;
+    width:157px;
+    height:178px;
+}
+
+.card-front .genre{
+    display: block;
+    margin-top:-14px;
+    margin-left:18px;
+    font-size: 14px;
+}
+
+.title{
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom:5px;
+}
+
+.grade-area{
+    font-size: 15px;
+    filter: invert(72%) sepia(59%) saturate(4163%) hue-rotate(101deg) brightness(97%) contrast(106%);
+}
+
+.romance{
+    color:var(--romance);
+}
+
+.card-back{
+    background-color: indigo;
+    opacity:0;
+}
+
+.page-flip:hover .card-back{
+    opacity: 1;
+}
+
+.card-back .info{
+    margin-top: 18px;
+    margin-left:18px;
+    margin-right:35px;
+    width:157px;
+    height:178px;
+    color:white;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+
+.author{
+    font-size:14px;
+}
+
+.horizontal-line{
+    display:block;
+    width:20px;
+    height:1px;
+    background-color:white;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+.synopsis{
+    height: auto;
+    font-size: 13px;
+    
+    margin-bottom: 0;
 }
