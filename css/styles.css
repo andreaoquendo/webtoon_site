@@ -457,8 +457,21 @@ ul#navi-links li a:hover{
     filter: invert(72%) sepia(59%) saturate(4163%) hue-rotate(101deg) brightness(97%) contrast(106%);
 }
 
+/* GENRES COLORS*/
 .romance{
     color:var(--romance);
+}
+
+.drama{
+    color:purple;
+}
+
+.sci-fi{
+    color: blue;
+}
+
+.comedy{
+    color:yellow;
 }
 
 .card-back{
@@ -499,4 +512,8 @@ ul#navi-links li a:hover{
     font-size: 13px;
     
     margin-bottom: 0;
+}
+
+.genre{
+    text-transform: capitalize;
 }
