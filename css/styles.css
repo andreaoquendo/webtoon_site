@@ -404,6 +404,8 @@ ul#navi-links li a:hover{
     margin:0 auto;
     padding-top: 18px;
     padding-left:15px;
+    height:450px;
+    overflow: hidden;
 }
 
 .page li{
@@ -463,20 +465,60 @@ ul#navi-links li a:hover{
 }
 
 .drama{
-    color:purple;
+    color:#09B39E;
 }
 
 .sci-fi{
-    color: blue;
+    color: green;
 }
 
 .comedy{
-    color:yellow;
+    color: #EEA800;
+}
+
+.fantasy{
+    color: #75007F;
+}
+
+.slice{
+    color:#9AB710;
+}
+
+.supernatural{
+    color:blue;
 }
 
 .card-back{
     background-color: indigo;
     opacity:0;
+}
+
+.card-back.romance{
+    background-color:var(--romance);
+}
+
+.card-back.drama{
+    background-color:#09B39E;
+}
+
+.card-back.sci-fi{
+    background-color: green;
+}
+
+.card-back.comedy{
+    background-color:#EEA800;
+}
+
+.card-back.fantasy{
+    background-color: #75007F;
+}
+
+.card-back.slice{
+    background-color:#9AB710;
+}
+
+.card-back.supernatural{
+    background-color:blue;
 }
 
 .page-flip:hover .card-back{
