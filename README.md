@@ -25,3 +25,8 @@
   </ul>
   
 ![](images/updates/weekdaybar.png)
+
+## (12/12/2020)
+<p>Finished weekly bar, just need to organize code.
+ 
+ ![](images/updates/untilnow.png)
