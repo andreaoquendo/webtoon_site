@@ -3,7 +3,7 @@
 }
 
 body{
-    background-color: var(--web-light-gray);
+    background-color: var(--web-background);
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
 }
@@ -399,8 +399,13 @@ ul#navi-links li a:hover{
     display: inline-block;
 }
 
-.page{
-    width:1140px;
+.page-box{
+    width:100%;
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--web-light-gray);    
+}
+
+.webtoon{
     margin:0 auto;
     padding-top: 18px;
     padding-left:15px;
@@ -408,7 +413,11 @@ ul#navi-links li a:hover{
     overflow: hidden;
 }
 
-.page li{
+.page{
+    width:1140px;
+}
+
+.webtoon li{
     display: inline-block;
     width:210px;
     height:210px;
@@ -416,7 +425,7 @@ ul#navi-links li a:hover{
     overflow: hidden;
 }
 
-.page .page-flip{
+.webtoon .page-flip{
     display: block;
     width:210px;
     height:210px;
@@ -452,6 +461,7 @@ ul#navi-links li a:hover{
     font-weight: 600;
     line-height: 20px;
     margin-bottom:5px;
+    font-size:16px;
 }
 
 .grade-area{
@@ -493,31 +503,31 @@ ul#navi-links li a:hover{
     opacity:0;
 }
 
-.card-back.romance{
+.card-back.romance, .genre-list .romance{
     background-color:var(--romance);
 }
 
-.card-back.drama{
+.card-back.drama, .genre-list .drama{
     background-color:#09B39E;
 }
 
-.card-back.sci-fi{
+.card-back.sci-fi, .genre-list .sci-fi{ 
     background-color: green;
 }
 
-.card-back.comedy{
+.card-back.comedy, .genre-list .comedy{
     background-color:#EEA800;
 }
 
-.card-back.fantasy{
+.card-back.fantasy, .genre-list .fantasy{
     background-color: #75007F;
 }
 
-.card-back.slice{
+.card-back.slice, .genre-list .slice{
     background-color:#9AB710;
 }
 
-.card-back.supernatural{
+.card-back.supernatural, .genre-list .supernatural{
     background-color:blue;
 }
 
@@ -558,4 +568,71 @@ ul#navi-links li a:hover{
 
 .genre{
     text-transform: capitalize;
+}
+
+/*-- NEW TO WEBTOON --*/
+
+.page-box h3{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#new-to-webtoon{
+    height:300px;
+    width:1140px;
+    margin:0 auto;
+}
+
+.genre-list{
+    height: 500px;
+    margin:0 auto;
+}
+
+#genres-bar{
+    width:1140px;
+    margin:0 auto;
+}
+
+.page-box h2{
+    text-align: center;
+}
+
+.genre-list li {
+    width:1125px;
+}
+
+.genre-list li a{
+    display: block;
+    height:210px;
+    width:210px;
+    color:white;
+    margin-right: 0;
+    position:relative;
+}
+
+.genre-list li a p{
+    position:absolute;
+    top:20px;
+    left:20px;
+    font-weight: 700;
+    width:150px;
+    text-transform: uppercase;
+}
+
+.genre-list li a .description{
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    width:160px;
+    font-size:15px;
+}
+
+.genre-list li a img{
+    position:absolute;
+    top:23px;
+    right:18px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
 }

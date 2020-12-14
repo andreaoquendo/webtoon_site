@@ -23,7 +23,7 @@ function updateRecent(){
   _recentSearchesBox.innerHTML = _researchHistory;
 }
 
-function init(){
+function initHeader(){
   if(localStorage.getItem("recentSearches")){
       _researchHistory = localStorage.getItem("recentSearches");
       updateRecent();
@@ -38,7 +38,7 @@ window.onload = function () {
     _searchBarInput.value = "";
   };
 
-  init();
+initHeader();
 
 _searchButton.addEventListener("click", openSearch);
 _closeButton.addEventListener("click", closeSearch);
