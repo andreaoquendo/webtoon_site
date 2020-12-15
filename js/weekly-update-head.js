@@ -2,7 +2,7 @@ let _actualClicked = 0;
 let _dummyText = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et...";
 let _dummyAuthor = "authorname";
 let _polkaCatLink = "https://www.youtube.com/watch?v=NUYvbT6vTPs";
-let _allWebtoons=[];
+let _arrayGenres=[];
 
 function WebtoonCard(name, author, synopsis, grade, genre, link, image){
     this.name = name;
@@ -21,20 +21,37 @@ function WebtoonCard(name, author, synopsis, grade, genre, link, image){
     addGenre(this);
 }
 
-function GenreCard(name, description){
+function GenreCard(name, description, position){
     this.name=name;
     this.description=description;
+    this.position=position;
     this.list=[];
-    this.showlist=[];
+    if(position == genres.slice){
+        this.id = "slice-gen"
+    }
+    else{
+        this.id=position+"-gen";
+    }
+    _arrayGenres.push(this);
 }
 
-let _Romance = new GenreCard("Romance", _dummyText);
-let _SciFi = new GenreCard("Sci-Fi", _dummyText)
-let _Drama = new GenreCard("Drama", _dummyText);
-let _Comedy = new GenreCard("Comedy", _dummyText);
-let _Slice = new GenreCard("Slice of Life", _dummyText);
-let _Fantasy = new GenreCard("Fantasy", _dummyText);
-let _Supernatural = new GenreCard("Supernatural", _dummyText);
+let genres = {
+    romance:"romance",
+    scifi:"sci-fi",
+    drama:"drama",
+    comedy:"comedy",
+    slice:"slice of life",
+    fantasy:"fantasy",
+    supernatural:"supernatural"
+}
+
+let _Romance = new GenreCard("Romance", _dummyText, genres.romance);
+let _SciFi = new GenreCard("Sci-Fi", _dummyText, genres.scifi);
+let _Drama = new GenreCard("Drama", _dummyText, genres.drama);
+let _Comedy = new GenreCard("Comedy", _dummyText, genres.comedy);
+let _Slice = new GenreCard("Slice of Life", _dummyText, genres.slice);
+let _Fantasy = new GenreCard("Fantasy", _dummyText, genres.fantasy);
+let _Supernatural = new GenreCard("Supernatural", _dummyText, genres.supernatural);
 
 let _daysList = document.getElementsByClassName("days");
 let _dayArray = [0,1,2,3,4,5,6];
@@ -50,15 +67,7 @@ let _daysInWeek = {
 
 
 
-let genres = {
-    romance:"romance",
-    scifi:"sci-fi",
-    drama:"drama",
-    comedy:"comedy",
-    slice:"slice of life",
-    fantasy:"fantasy",
-    supernatural:"supernatural"
-}
+
 
 function addGenre(webtoon){
     switch(webtoon.genre){
@@ -88,23 +97,28 @@ function addGenre(webtoon){
 
 
 
-let _cardAcception = new WebtoonCard("Acception", "Colourbee", _dummyText,562600, genres.romance, _polkaCatLink, "images/stories/acception.jpg");
-let _cardAntiStalker = new WebtoonCard("AntiSTALKER", "VOKIVOKI", _dummyText,427200, genres.romance, _polkaCatLink, "images/stories/antistalker.jpg");
+let _cardAcception = new WebtoonCard("Acception", "Colourbee", _dummyText,562600, genres.comedy, _polkaCatLink, "images/stories/acception.jpg");
+let _cardAntiStalker = new WebtoonCard("AntiSTALKER", "VOKIVOKI", _dummyText,427200, genres.supernatural, _polkaCatLink, "images/stories/antistalker.jpg");
 let _cardDuke = new WebtoonCard("Love Advice from the Great Duke of Hell", "unfins", _dummyText,598423,genres.comedy, _polkaCatLink, "images/stories/duke.jpg");
 let _cardEdith = new WebtoonCard("Edith", "Swansgarden", _dummyText, 8469726, genres.romance, _polkaCatLink, "images/stories/edith.jpg");
 let _cardEmpress = new WebtoonCard("The Remarried Empress", "Alphatart/Sumpul", _dummyText, 975205, genres.fantasy, _polkaCatLink, "images/stories/empress.jpg");
 let _cardFour = new WebtoonCard("The Four Of Us", "Mai Hirschfield_", _dummyText, 877700, genres.drama, _polkaCatLink, "images/stories/four.jpg");
 let _cardGiantNerd = new WebtoonCard("My Giant Nerd Boyfriend", "fishball", _dummyText, 879200, genres.slice, _polkaCatLink, "images/stories/giantnerd.jpg");
 let _cardLoveEnemy = new WebtoonCard("To Love Your Enemy", "Jungyoon/Taegeon", _dummyText, 3647920, genres.romance, _polkaCatLink, "images/stories/loveenemy.jpg");
-let _cardLoveMeKnot = new WebtoonCard("Love Me Knot", "Sophia", _dummyText, 7942063, genres.romance, _polkaCatLink, "images/stories/lovemeknot.jpg");
+let _cardLoveMeKnot = new WebtoonCard("Love Me Knot", "Sophia", _dummyText, 7942063, genres.drama, _polkaCatLink, "images/stories/lovemeknot.jpg");
 let _cardNiceToMeetYou = new WebtoonCard("Nice To Meet You", "Wishroomness", _dummyText, 9842231, genres.romance, _polkaCatLink, "images/stories/nicetomeetyou.jpg");
 let _cardOmniscientReader = new WebtoonCard("Omniscient Reader", "sing N song / Sleepy-C", _dummyText, 781943, genres.fantasy, _polkaCatLink, "images/stories/omniscient.jpg");
 let _cardPhase = new WebtoonCard("Phase", "Jouki", _dummyText, 78166905, genres.romance, _polkaCatLink, "images/stories/phase.jpg");
-let _cardSwimmingLessons = new WebtoonCard("Swimming Lessons for a Mermaid", "YONGCHAN", _dummyText, 1038298, genres.romance, _polkaCatLink, "images/stories/swimming.jpg");
-let _cardTrueBeauty = new WebtoonCard("True Beauty", "Yaoingi", _dummyText, 18498742, genres.romance, _polkaCatLink, "images/stories/truebeauty.jpg");
+let _cardSwimmingLessons = new WebtoonCard("Swimming Lessons for a Mermaid", "YONGCHAN", _dummyText, 1038298, genres.supernatural, _polkaCatLink, "images/stories/swimming.jpg");
+let _cardTrueBeauty = new WebtoonCard("True Beauty", "Yaoingi", _dummyText, 18498742, genres.drama, _polkaCatLink, "images/stories/truebeauty.jpg");
 let _cardUnholy = new WebtoonCard("Unholy Blood", "fiLina Im/JeonghyeonKim", _dummyText, 782036, genres.supernatural, _polkaCatLink, "images/stories/unholy.jpg");
-let _cardYumiCells = new WebtoonCard("Yumi Cells", "Donggeon Lee", _dummyText, 782036, genres.slice, _polkaCatLink, "images/stories/yummicells.jpg");
-let _cardBlueChair = new WebtoonCard("Bluechair", "Shen", _dummyText, 782036, genres.slice, _polkaCatLink, "images/stories/yummicells.jpg");
+let _cardYumiCells = new WebtoonCard("Yumi Cells", "Donggeon Lee", _dummyText, 782036, genres.slice, _polkaCatLink, "images/stories/yumicells.jpg");
+let _cardBlueChair = new WebtoonCard("Bluechair", "Shen", _dummyText, 782036, genres.slice, _polkaCatLink, "images/stories/bluechair.jpg");
+let _cardDownEarth = new WebtoonCard("Down to Earth", "Pookie Senpai", _dummyText, 782036, genres.scifi, _polkaCatLink, "images/stories/downtoearth.jpg");
+let _cardLoveBot = new WebtoonCard("Love Bot", "someone", _dummyText, 782036, genres.scifi, _polkaCatLink, "images/stories/lovebot.jpg");
+let _cardRebirth = new WebtoonCard("Rebirth", "Michi", _dummyText, 782036, genres.scifi, _polkaCatLink, "images/stories/rebirth.jpg");
+let _cardToasterDude = new WebtoonCard("Toaster Dude", "Michi", _dummyText, 782036, genres.comedy, _polkaCatLink, "images/stories/toasterdude.jpg");
+let _cardCastleSwimmer = new WebtoonCard("Castle Swimmer", "Wendy Lian Martin", _dummyText, 782036, genres.fantasy, _polkaCatLink, "images/stories/toasterdude.jpg");
 
 
 
@@ -147,3 +161,7 @@ _cardsOfDay.forEach(function(element, index){
 let _pagesBar = document.getElementsByClassName("page-box")[0];
 let _arrayDaysPage = document.getElementsByClassName("page");
 let _newsBar = document.getElementById("new");
+let _selectedGenres = getRandom(_arrayGenres, 2);
+
+
+

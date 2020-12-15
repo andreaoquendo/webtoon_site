@@ -586,6 +586,10 @@ ul#navi-links li a:hover{
     margin:0 auto;
 }
 
+#new{
+    height:auto;
+}
+
 .genre-list{
     height: 500px;
     margin:0 auto;
@@ -600,11 +604,11 @@ ul#navi-links li a:hover{
     text-align: center;
 }
 
-.genre-list li {
+.genre-list>li {
     width:1125px;
 }
 
-.genre-list li a{
+.genre-list .genre-card a{
     display: block;
     height:210px;
     width:210px;
@@ -613,7 +617,7 @@ ul#navi-links li a:hover{
     position:relative;
 }
 
-.genre-list li a p{
+.genre-list .genre-card a p{
     position:absolute;
     top:20px;
     left:20px;
@@ -622,7 +626,7 @@ ul#navi-links li a:hover{
     text-transform: uppercase;
 }
 
-.genre-list li a .description{
+.genre-list .genre-card a .description{
     position:absolute;
     bottom:20px;
     left:20px;
@@ -630,9 +634,25 @@ ul#navi-links li a:hover{
     font-size:15px;
 }
 
-.genre-list li a img{
+.genre-list .genre-card a img{
     position:absolute;
     top:23px;
     right:18px;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+.genre-card{
+    overflow: hidden;
+}
+.carrd{
+    position: relative;
+}
+
+.carrd .webtoon{
+    position: absolute;
+    top:0;
+    left:225px;
+    display: block;
+    height:228px;
+    padding:0;
 }

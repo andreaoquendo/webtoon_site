@@ -17,3 +17,5 @@ var _interval;
 let _pagination = document.getElementById("pagination");
 let _bannerPics = document.getElementById("poster-images");
 let _linkBox = document.getElementsByClassName("link-box")[0];
+
+console.log(_todayDayWeek);

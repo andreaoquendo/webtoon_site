@@ -65,6 +65,40 @@ function addNewCards(){
     _newsBar.innerHTML=inner;
 }
 
+function addGenCards(cards){
+    var inner="";
+    cards.forEach(function(webtoon){
+        inner+=createCard(webtoon);
+    })
+    return inner;
+}
+
+function makeCardGenre(genre){
+    var posi = (genre.position == genre.slice) ? "slice of life" : genre.position;
+    var a = '<div class="genre-card"><a class='+posi+' href =""><p>'+genre.name+'</p><img src="images/icons/next.svg" width=12px /><span class="description">'+genre.description+'</span></a></div>';
+    var otherli="<ul class='webtoon' id="+genre.id+"></ul>";
+    var text="<li class='carrd'>"+a+otherli+"</li>";
+    return text;
+}
+
+function addCardGenre(){
+    var aux=document.getElementsByClassName("genre-list")[0];
+    aux.innerHTML = makeCardGenre(_selectedGenres[0])+makeCardGenre(_selectedGenres[1]);
+}
+function addWebtoonsCardstoGenre(genero){
+    var aux = document.getElementById(genero.id);
+    var top= genero.list.slice(0,3);
+    console.log("oi");
+    aux.innerHTML = addGenCards(top);
+    
+}
+
+function twoGenres(){
+    addCardGenre();
+    addWebtoonsCardstoGenre(_selectedGenres[0]);
+    addWebtoonsCardstoGenre(_selectedGenres[1]);
+}
+
 function initWeekly(){
     _actualClicked = transformDayWeek(_todayDayWeek);
     _daysList[_actualClicked].classList.remove("closed");
@@ -82,3 +116,4 @@ addPages();
 addCards();
 addNewCards();
 initWeekly();
+twoGenres();
