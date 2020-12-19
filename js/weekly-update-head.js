@@ -118,8 +118,13 @@ let _cardDownEarth = new WebtoonCard("Down to Earth", "Pookie Senpai", _dummyTex
 let _cardLoveBot = new WebtoonCard("Love Bot", "someone", _dummyText, 782036, genres.scifi, _polkaCatLink, "images/stories/lovebot.jpg");
 let _cardRebirth = new WebtoonCard("Rebirth", "Michi", _dummyText, 782036, genres.scifi, _polkaCatLink, "images/stories/rebirth.jpg");
 let _cardToasterDude = new WebtoonCard("Toaster Dude", "Michi", _dummyText, 782036, genres.comedy, _polkaCatLink, "images/stories/toasterdude.jpg");
-let _cardCastleSwimmer = new WebtoonCard("Castle Swimmer", "Wendy Lian Martin", _dummyText, 782036, genres.fantasy, _polkaCatLink, "images/stories/toasterdude.jpg");
-
+let _cardCastleSwimmer = new WebtoonCard("Castle Swimmer", "Wendy Lian Martin", _dummyText, 782036, genres.fantasy, _polkaCatLink, "images/stories/castleswimmer.jpg");
+let _cardMurrz = new WebtoonCard("Murrz", "murrz", _dummyText, 782036, genres.comedy, _polkaCatLink, "images/stories/murrz.jpg");
+let _cardMuted = new WebtoonCard("Muted", "Miranda Mundt", _dummyText, 782036, genres.supernatural, _polkaCatLink, "images/stories/muted.jpg");
+let _cardYourThrone = new WebtoonCard("Your Throne", "SAM", _dummyText, 782036, genres.fantasy, _polkaCatLink, "images/stories/yourthrone.jpg");
+let _cardWeakHero = new WebtoonCard("Weak Hero", "SEOPASS / ZERO", _dummyText, 782036, genres.drama, _polkaCatLink, "images/stories/weakhero.jpg");
+let _cardSafely = new WebtoonCard("Safely Endargered", "Chris McCoy", _dummyText, 782036, genres.slice, _polkaCatLink, "images/stories/safely.jpg");
+let _cardEggnoid = new WebtoonCard("Eggnoid", "Andie the Redcat", _dummyText, 782036, genres.scifi, _polkaCatLink, "images/stories/eggnoid.jpg");
 
 
 

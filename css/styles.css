@@ -468,6 +468,10 @@ ul#navi-links li a:hover{
     filter: invert(72%) sepia(59%) saturate(4163%) hue-rotate(101deg) brightness(97%) contrast(106%);
 }
 
+ul.page.webtoon{
+    padding-bottom:18px;
+}
+
 /* GENRES COLORS*/
 .romance{
     color:var(--romance);
@@ -581,7 +585,8 @@ ul#navi-links li a:hover{
 #new-to-webtoon{
     width:1140px;
     margin:0 auto;
-    padding-top:30px;
+    padding-top:36px;
+    padding-bottom: 26px;
 }
 
 #new{
@@ -659,7 +664,7 @@ ul#navi-links li a:hover{
 #popular{
     width:1110px;
     margin: 0 auto;
-    padding: 53px 0;
+    padding: 66px 0;
     overflow: hidden;
 }
 
@@ -684,9 +689,6 @@ ul#navi-links li a:hover{
     margin-right: 30px;
 }
 
-#age ul, #age a{
-    margin-left:30px;
-}
 .popular ul li{
     border-top: solid 1px #ddd;
     position: relative;
@@ -703,7 +705,7 @@ ul#navi-links li a:hover{
     top:0;
 }
 
-#genre ul li .number{
+#genre ul li .number, #age ul li .number{
     position:absolute;
     left:10px;
     top:10px;
@@ -712,6 +714,8 @@ ul#navi-links li a:hover{
     color:white;
     font-weight: 700;
 }
+
+
 
 #genre ul li .name-box, #age ul li .name-box{
     position:absolute;
@@ -823,7 +827,7 @@ ul.category-box li{
     width:1200px;
     margin-right:auto;
     margin-left: auto;
-    padding:30px 0;
+    padding:51px 0;
 
 }
 
@@ -949,7 +953,7 @@ ul.canvas li a:hover .canvas-info{
 }
 
 .download-area{
-    padding:25px 0;
+    padding:27px 0 28px 0;
     margin: 0 auto;
     text-align: center;
 }
@@ -1100,3 +1104,91 @@ select#lang option:hover{
 #end{
     border: none;
 }
+
+#recently-opened{
+    position:fixed;
+    top:0;
+    right:0;
+    height: 100%;
+}
+
+#recently-opened .ab{
+    display: block;
+    width:40px;
+    height:136px;
+    background-color: rgba(255, 255, 255, 0.7);
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    border-radius: 10px 0 0 10px;
+    margin-top:200px;
+    cursor: pointer;
+    float:left;
+    font-size: 13px;
+    font-weight: 700;   
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+    
+}
+
+#recently-opened .ab.opened{
+
+    color:transparent;
+    background-image: url("../images/icons/next.svg");
+    background-size: 20px 50px;
+    background-repeat: no-repeat;
+    background-position-x: 70%;
+    background-position-y: 50%;
+}
+
+#recently-opened .ab.opened em{
+    display: none;
+}
+
+#recently-opened .bar{
+    width:0;
+    height:inherit;
+    background-color:rgba(255, 255, 255, 0.7);
+    text-align: center;
+    font-size: 15px;
+    overflow-x: hidden;
+    transition: 0.5s;
+    float:right;
+}
+
+.inside{
+    position: relative;
+    top:50%;
+    transform: translate(0, -50%);
+    -ms-transform: translate(-50%, -50%);
+    margin-left:22px;
+    margin-right: 22px;
+}
+
+.horizontal{
+    display: block;
+    width:70px;
+    height:1px;
+    background-color:#e3deda;
+    margin: 25px 0;
+}
+
+.inside ul li{
+    width:70px;
+    height:70px;
+    margin: 50px 0;
+}
+
+.inside ul {
+    padding-bottom: 50px;
+}
+
+.ico-down{
+    display: inline-block;
+    width:10px;
+    height:10px;
+    background-image: url("../images/icons/arrow-down.svg");
+    background-size: 10px;
+    background-repeat: no-repeat;
+    transform:rotate(90deg);
+} 

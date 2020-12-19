@@ -87,7 +87,7 @@ function addCardGenre(){
 }
 function addWebtoonsCardstoGenre(genero){
     var aux = document.getElementById(genero.id);
-    var top= genero.list.slice(0,3);
+    var top= genero.list.slice(0,4);
     console.log("oi");
     aux.innerHTML = addGenCards(top);
     
