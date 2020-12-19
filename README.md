@@ -28,5 +28,14 @@
 
 ## (12/12/2020)
 <p>Finished weekly bar, just need to organize code.
- 
+
  ![](images/updates/untilnow.png)
+
+## (18/12/2020)
+<p>I still need to fix some things but i won't do this now since it just stresses me out.
+  
+ First part:
+ ![](images/updates/front.png) 
+ 
+ Second part:
+  ![](images/updates/back.png)
